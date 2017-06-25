@@ -1,7 +1,8 @@
 package com.solution.main;
 
+import com.solution.backtrack.LCSeq;
 import com.solution.backtrack.NQueenProblem;
-import com.solution.recursion.KnapSackProblem;
+import com.solution.dynamicP.KnapSack01;
 import com.solution.tree.ValidBST;
 
 public class Solution {
@@ -12,9 +13,8 @@ public class Solution {
 		//new NQueenProblem().run();
 		/**** Tree *****************/
 		//new ValidBST().run();
-		
-		
-		new KnapSackProblem().run();
+		//new KnapSack01().run();
+		new LCSeq().run();
 		
 
 	}
