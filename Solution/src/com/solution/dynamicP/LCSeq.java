@@ -1,4 +1,4 @@
-package com.solution.backtrack;
+package com.solution.dynamicP;
 
 import java.util.Scanner;
 
@@ -31,7 +31,7 @@ public class LCSeq {
 
 	private int doRunDP(String seq1, String seq2) {
 
-		int[][] T = new int[seq1.length() + 1][seq2.length() + 1];
+		int[][] T = new int[seq1.length()+1][seq2.length()+1];
 
 		for (int i = 0; i <= seq1.length(); i++) {
 			for (int j = 0; j <= seq2.length(); j++) {
