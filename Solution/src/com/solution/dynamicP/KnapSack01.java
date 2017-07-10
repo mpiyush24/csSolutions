@@ -9,7 +9,6 @@ public class KnapSack01 {
 	public void run() {
 
 		Scanner sc = ReadInput.getScanner("knapsack");
-		sc.useDelimiter("\n");
 		int size = sc.nextInt();
 		int rw = sc.nextInt();
 

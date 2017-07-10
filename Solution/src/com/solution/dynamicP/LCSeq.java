@@ -8,8 +8,6 @@ public class LCSeq {
 	public void run() {
 		Scanner sc = ReadInput.getScanner("lcs");
 
-		sc.useDelimiter("\n");
-
 		String seq1 = sc.next();
 		String seq2 = sc.next();
 
