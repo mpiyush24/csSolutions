@@ -15,7 +15,7 @@ public class NQueenProblem {
 
 		int[][] board = new int[m][m];
 
-		boolean isPossible = doRun(board, m, n);
+		boolean isPossible = placeQueens(board, m, n);
 
 		if (isPossible)
 			for (int i = 0; i < m; i++) {
@@ -30,7 +30,7 @@ public class NQueenProblem {
 
 	}
 
-	public boolean doRun(int[][] board, int m, int n) {
+	public boolean placeQueens(int[][] board, int m, int n) {
 		if (n == 0) {
 			return true;
 		}
@@ -39,7 +39,7 @@ public class NQueenProblem {
 				if (isSafeSquare(board, m, i, j)) {
 					//if we found a safe square assign
 					board[i][j] = 1;
-					if (doRun(board, m, n - 1)) {
+					if (placeQueens(board, m, n - 1)) {
 						return true;
 					} else { // undo the assignment , eval next square
 						board[i][j] = 0;
