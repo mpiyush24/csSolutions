@@ -1,8 +1,8 @@
 package com.solution.backtrack;
 
-import java.util.Scanner;
+import com.solution.main.*;
 
-import com.solution.main.ReadInput;
+import java.util.*;
 
 public class NQueenProblem {
 
@@ -60,9 +60,8 @@ public class NQueenProblem {
 		}
 
 		for (int p = 0; p < m; p++) {
-
 			for (int q = 0; q < m; q++) {
-				if (p + q == i + j || p - q == i - j) {
+				if (isDiagonalSquare(p, q, i, j)) {
 					if (board[p][q] == 1) {
 						return false;
 					}
@@ -70,5 +69,9 @@ public class NQueenProblem {
 			}
 		}
 		return true;
+	}
+
+	private boolean isDiagonalSquare(int p, int q, int i, int j) {
+		return p + q == i + j || p - q == i - j;
 	}
 }

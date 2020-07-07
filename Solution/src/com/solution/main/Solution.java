@@ -3,6 +3,7 @@ package com.solution.main;
 import java.io.FileNotFoundException;
 
 import com.solution.array.LocalMaxima;
+import com.solution.backtrack.*;
 
 
 public class Solution {
@@ -10,7 +11,7 @@ public class Solution {
 	public static void main(String[] args) throws FileNotFoundException {
 
 		/**** Back Tracking ********/
-		// new NQueenProblem().run();
+		new NQueenProblem().run();
 		/**** Tree *****************/
 		// new ValidBST().run();
 		// new KnapSack01().run();
@@ -27,7 +28,7 @@ public class Solution {
 		//new RodCuttingMinimizeCost().run();
 		//new LevelOrderTraversal().run();
 		//new TopView().run();
-		new LocalMaxima().run();
+		//new LocalMaxima().run();
 		
 	}
 
