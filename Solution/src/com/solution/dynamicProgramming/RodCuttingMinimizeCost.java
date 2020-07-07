@@ -1,6 +1,5 @@
-package com.solution.dynamicP;
+package com.solution.dynamicProgramming;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
