@@ -51,7 +51,7 @@ public class MatrixSpiralForm {
 			LC = j ; j++ ; i++;
 			
 			//Check for odd and even no. of row and columns
-			doSpiral = (BR-TR<=1 || RC-LC <=1)? false: true ;
+			doSpiral = BR - TR > 1 && RC - LC > 1;
 		}
 
 	}

@@ -59,6 +59,7 @@ public class NQueenProblem {
 			}
 		}
 
+		//Todo Optimize this loop. n^2 can be brought down to n.
 		for (int p = 0; p < m; p++) {
 			for (int q = 0; q < m; q++) {
 				if (isDiagonalSquare(p, q, i, j)) {
