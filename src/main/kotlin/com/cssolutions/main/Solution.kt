@@ -40,6 +40,5 @@ object Solution {
         RodCuttingMinimizeCost().run()
         LevelOrderTraversal().run()
         TopView().run()
-        LocalMaxima().run()
     }
 }
