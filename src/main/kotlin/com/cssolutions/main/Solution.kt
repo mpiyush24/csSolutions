@@ -1,7 +1,5 @@
 package com.cssolutions.main
 
-import com.cssolutions.array.LocalMaxima
-import com.cssolutions.array.MatrixSpiralForm
 import com.cssolutions.array.RotateArray
 import com.cssolutions.backtrack.NQueenProblem
 import com.cssolutions.backtrack.StringPermutation
@@ -34,7 +32,6 @@ object Solution {
         SubsetSum().run()
         LongestIncreasingSubset().run()
         LongestPalindromSubsequence().run()
-        MatrixSpiralForm().run()
         RotateArray().run()
         BalancedExpression().run()
         RodCuttingMinimizeCost().run()

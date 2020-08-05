@@ -1,62 +1,49 @@
 package com.cssolutions.array
 
-import com.cssolutions.main.ReadInput
 import java.io.FileNotFoundException
 
 class MatrixSpiralForm {
     @Throws(FileNotFoundException::class)
-    fun run() {
-        val sc = ReadInput.getScanner("spiralMatrix")
-        val m = sc.nextInt()
-        val n = sc.nextInt()
-        val a = Array(m) { IntArray(n) }
-        while (sc.hasNextInt()) {
-            for (i in 0 until m) {
-                for (j in 0 until n) a[i][j] = sc.nextInt()
-            }
-        }
-        dorun(a)
-    }
 
-    private fun dorun(a: Array<IntArray>) {
+     fun dorun(a: Array<IntArray>, result: MutableList<Int>) {
         var doSpiral = true
         var i = 0
         var j = 0
-        var TR = -1
-        var BR = a.size
-        var LC = -1
-        var RC: Int = a[0].size
+        var topRow:Int
+        var bottomRow = a.size
+        var leftColumn = -1
+        var rightColumn: Int = a[0].size
         while (doSpiral) {
-            while (j < RC) {
-                println(a[i][j])
+            while (j < rightColumn) {
+                result.add(a[i][j])
                 j++
             }
-            TR = i
+            topRow = i
             j--
             i++
-            while (i < BR) {
-                println(a[i][j])
+            while (i < bottomRow) {
+                result.add(a[i][j])
                 i++
             }
-            RC = j
+            rightColumn = j
             j--
             i--
-            while (j > LC) {
-                println(a[i][j])
+            while (j > leftColumn) {
+                result.add(a[i][j])
                 j--
             }
-            BR = i
+            bottomRow = i
             j++
             i--
-            while (i > TR) {
-                println(a[i][j])
+            while (i > topRow) {
+                result.add(a[i][j])
                 i--
             }
-            LC = j
+            leftColumn = j
             j++
             i++
             //Check for odd and even no. of row and columns
-            doSpiral = BR - TR > 1 && RC - LC > 1
+            doSpiral = bottomRow - topRow > 1 && rightColumn - leftColumn > 1
         }
     }
 }
