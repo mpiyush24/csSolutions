@@ -1,7 +1,6 @@
 package com.cssolutions.main
 
 import com.cssolutions.backtrack.StringPermutation
-import com.cssolutions.ds.BalancedExpression
 import com.cssolutions.dynamicProgramming.KnapSack01
 import com.cssolutions.dynamicProgramming.LCSeq
 import com.cssolutions.dynamicProgramming.LCSubString
@@ -29,7 +28,6 @@ object Solution {
         SubsetSum().run()
         LongestIncreasingSubset().run()
         LongestPalindromSubsequence().run()
-        BalancedExpression().run()
         RodCuttingMinimizeCost().run()
         LevelOrderTraversal().run()
         TopView().run()

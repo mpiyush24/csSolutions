@@ -1,18 +1,10 @@
 package com.cssolutions.ds
 
-import com.cssolutions.main.ReadInput
-import java.io.FileNotFoundException
 import java.util.*
 
 class BalancedExpression {
-    @Throws(FileNotFoundException::class)
-    fun run() {
-        val sc = ReadInput.getScanner("balancedExpression")
-        val expr = sc.next()
-        doRun(expr)
-    }
 
-    private fun doRun(expr: String) {
+    fun execute(expr: String) : Boolean {
         val s: Stack<Char> = Stack()
         var i = 0
         while (i < expr.length) {
@@ -29,10 +21,6 @@ class BalancedExpression {
             }
             i++
         }
-        if (s.isEmpty() && i == expr.length) {
-            println("Balanced Expression")
-        } else {
-            println("Unbalanced Expression")
-        }
+        return s.isEmpty() && i == expr.length
     }
 }
