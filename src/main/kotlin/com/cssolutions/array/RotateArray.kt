@@ -1,59 +1,37 @@
 package com.cssolutions.array
 
-import com.cssolutions.main.ReadInput
-import java.io.FileNotFoundException
-
 class RotateArray {
-    @Throws(FileNotFoundException::class)
-    fun run() {
-        val sc = ReadInput.getScanner("matrixRotate")
-        val m = sc.nextInt()
-        val n = sc.nextInt()
-        val a = Array(m) { IntArray(n) }
-        while (sc.hasNextInt()) {
-            for (i in 0 until m) {
-                for (j in 0 until n) a[i][j] = sc.nextInt()
-            }
-        }
-        //dorun(a);
-        inPlaceRotation(a)
-    }
-
-    private fun dorun(a: Array<IntArray>) {
+    fun rotateWithAuxSpace(a: Array<IntArray>) : Array<IntArray> {
         val m = a.size
         val n: Int = a[0].size
-        val b = Array(n) { IntArray(m) }
+        val result = Array(n) { IntArray(m) }
         for (i in 0 until m) {
             val temp = IntArray(n)
             for (j in 0 until n) {
                 temp[j] = a[i][j]
             }
-            for (j in m - i - 1 downTo 0) {
-                for (k in 0 until n) {
-                    b[k][j] = temp[k]
-                }
-            }
-        }
-        for (i in 0 until n) {
+            val col = m - i - 1
             for (j in 0 until m) {
-                print(b[i][j].toString() + " ")
+                result[j][col] = temp[j]
             }
-            println()
         }
+        return result
     }
 
     fun inPlaceRotation(a: Array<IntArray>) {
+        // For inplace rotation, we rotate topLeft, topRight, BottomRight, BottomLeft in the first pass.
+        // In the second pass we move the pointer forward from each values we rotated in the first pass, i.e (0,1), (2,n), (m,n-1), (0,m-1)
         val m = a.size
         val n: Int = a[0].size
-        var iter = 0
-        iter = if (m % 2 == 0) {
+        val itr = if (m % 2 == 0) {
             m / 2 - 1
         } else {
             m / 2
         }
-        for (x in 0..iter) {
-            val up_bound_col = n - x - 1
-            val up_bound_row = m - x - 1
+        for (x in 0..itr) {
+            val up_bound_col = (n - 1) - x
+            val up_bound_row = (m - 1) - x
+            var postion_counter = 0 // This is used to figure out if for the current size we are iterating moving the 1 quadruplet 2nd or so on
             for (i in x until up_bound_row) { //from right top corner we are moving down
 // preserve value from right most column
 /*
@@ -71,14 +49,15 @@ class RotateArray {
                 var temp1 = a[i][up_bound_col]
                 a[i][up_bound_col] = a[x][i]
                 //preserve value from last row position
-                val temp2 = a[up_bound_row][up_bound_col - i]
+                val temp2 = a[up_bound_row][up_bound_col - postion_counter]
                 // assign the value preserved from right most column to this row
-                a[up_bound_row][up_bound_col - i] = temp1
+                a[up_bound_row][up_bound_col - postion_counter] = temp1
                 //from lower left corner we are moving up
-                temp1 = a[up_bound_row - i][x]
+                temp1 = a[up_bound_row - postion_counter][x]
                 // from lower left corner we moving upwards.
-                a[up_bound_row - i][x] = temp2
+                a[up_bound_row - postion_counter][x] = temp2
                 a[x][i] = temp1
+                postion_counter++
             }
         }
         for (i in 0 until n) {

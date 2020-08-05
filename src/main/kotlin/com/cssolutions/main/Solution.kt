@@ -1,6 +1,5 @@
 package com.cssolutions.main
 
-import com.cssolutions.array.RotateArray
 import com.cssolutions.backtrack.NQueenProblem
 import com.cssolutions.backtrack.StringPermutation
 import com.cssolutions.ds.BalancedExpression
@@ -32,7 +31,6 @@ object Solution {
         SubsetSum().run()
         LongestIncreasingSubset().run()
         LongestPalindromSubsequence().run()
-        RotateArray().run()
         BalancedExpression().run()
         RodCuttingMinimizeCost().run()
         LevelOrderTraversal().run()
