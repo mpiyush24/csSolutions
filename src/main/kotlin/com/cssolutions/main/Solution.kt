@@ -1,6 +1,5 @@
 package com.cssolutions.main
 
-import com.cssolutions.backtrack.NQueenProblem
 import com.cssolutions.backtrack.StringPermutation
 import com.cssolutions.ds.BalancedExpression
 import com.cssolutions.dynamicProgramming.KnapSack01
@@ -21,7 +20,6 @@ object Solution {
     @JvmStatic
     fun main(args: Array<String>) {
         /**** Back Tracking  */
-        NQueenProblem().run()
         ValidBST().run()
         KnapSack01().run()
         LCSeq().run()

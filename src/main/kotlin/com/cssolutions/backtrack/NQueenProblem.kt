@@ -3,21 +3,6 @@ package com.cssolutions.backtrack
 import com.cssolutions.main.ReadInput
 
 class NQueenProblem {
-    fun run() {
-        val sc = ReadInput.getScanner("nQueen")
-        val m = sc.nextInt()
-        val n = sc.nextInt()
-        val board = Array(m) { IntArray(m) }
-        val isPossible = placeQueens(board, m, n)
-        if (isPossible) for (i in 0 until m) {
-            for (j in 0 until m) {
-                print(board[i][j].toString() + " ")
-            }
-            println()
-        } else {
-            println("Not Possible")
-        }
-    }
 
     fun placeQueens(board: Array<IntArray>, m: Int, n: Int): Boolean {
         if (n == 0) {
