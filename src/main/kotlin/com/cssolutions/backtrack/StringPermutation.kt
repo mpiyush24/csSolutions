@@ -1,20 +1,13 @@
 package com.cssolutions.backtrack
 
-import com.cssolutions.main.ReadInput
-
 class StringPermutation {
-    fun run() {
-        val sc = ReadInput.getScanner("permute")
-        val str = sc.next()
-        doPermute(str, 0, str.length - 1)
-    }
 
-    private fun doPermute(str: String, l: Int, r: Int) {
+    fun doPermute(str: String, l: Int, r: Int, result: MutableList<String>) {
         var str = str
-        if (l == r) println(str) else {
+        if (l == r) result.add(str) else {
             for (i in l..r) {
                 str = swap(str, l, i)
-                doPermute(str, l + 1, r)
+                doPermute(str, l + 1, r, result)
                 str = swap(str, l, i)
             }
         }

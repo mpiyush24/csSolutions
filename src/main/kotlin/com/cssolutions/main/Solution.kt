@@ -1,6 +1,5 @@
 package com.cssolutions.main
 
-import com.cssolutions.backtrack.StringPermutation
 import com.cssolutions.dynamicProgramming.KnapSack01
 import com.cssolutions.dynamicProgramming.LCSeq
 import com.cssolutions.dynamicProgramming.LCSubString
@@ -24,7 +23,6 @@ object Solution {
         LCSeq().run()
         LCSubString().run()
         MimimumCoinChange().run()
-        StringPermutation().run()
         SubsetSum().run()
         LongestIncreasingSubset().run()
         LongestPalindromSubsequence().run()
