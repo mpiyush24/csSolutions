@@ -1,4 +1,4 @@
-package com.cssolutions.ds
+package com.cssolutions.algorithm
 
 fun isPalindrome(integer: Int): Boolean {
 

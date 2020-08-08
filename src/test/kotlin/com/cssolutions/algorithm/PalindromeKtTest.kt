@@ -1,5 +1,6 @@
-package com.cssolutions.ds
+package com.cssolutions.algorithm
 
+import com.cssolutions.algorithm.isPalindrome
 import org.junit.jupiter.api.Test
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
