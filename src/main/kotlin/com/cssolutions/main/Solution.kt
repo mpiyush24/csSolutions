@@ -1,6 +1,5 @@
 package com.cssolutions.main
 
-import com.cssolutions.dynamicProgramming.KnapSack01
 import com.cssolutions.dynamicProgramming.LCSeq
 import com.cssolutions.dynamicProgramming.LCSubString
 import com.cssolutions.dynamicProgramming.LongestIncreasingSubset
@@ -19,7 +18,6 @@ object Solution {
     fun main(args: Array<String>) {
         /**** Back Tracking  */
         ValidBST().run()
-        KnapSack01().run()
         LCSeq().run()
         LCSubString().run()
         MimimumCoinChange().run()
