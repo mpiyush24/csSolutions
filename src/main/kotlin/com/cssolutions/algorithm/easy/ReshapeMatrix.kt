@@ -6,7 +6,6 @@ fun reShapeMatrix(array: Array<IntArray>, row: Int, col: Int) : Array<IntArray>
         return array
     val flattenArray = array.flatMap { it.asIterable() }
     val resultArray = Array(row) { IntArray(col)}
-
     var k =0
     for(i in 0 until row){
         for (j in 0 until col)
