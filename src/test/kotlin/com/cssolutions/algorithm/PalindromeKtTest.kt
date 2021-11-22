@@ -1,9 +1,10 @@
 package com.cssolutions.algorithm
 
-import com.cssolutions.algorithm.isPalindrome
+import com.cssolutions.algorithm.Palindrome.isPalindrome
+import com.cssolutions.algorithm.Palindrome.lengthOfTheLongestPalindrome
+import org.junit.jupiter.api.Assertions.assertFalse
+import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
-import kotlin.test.assertFalse
-import kotlin.test.assertTrue
 
 
 internal class PalindromeKtTest {
@@ -23,5 +24,11 @@ internal class PalindromeKtTest {
     fun isPalindromeTestBigNumber() {
         val isPalindrome = isPalindrome(1000021)
         assertFalse(isPalindrome)
+    }
+
+    @Test
+    fun lengthOfLongestPalindrome() {
+        val length = lengthOfTheLongestPalindrome("abaccaxbbxa")
+        println(length)
     }
 }

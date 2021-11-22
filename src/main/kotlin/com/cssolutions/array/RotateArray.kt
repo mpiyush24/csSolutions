@@ -1,6 +1,6 @@
 package com.cssolutions.array
 
-class RotateArray {
+object RotateArray {
     fun rotateWithAuxSpace(a: Array<IntArray>) : Array<IntArray> {
         val m = a.size
         val n: Int = a[0].size
