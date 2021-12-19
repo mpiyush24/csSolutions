@@ -35,7 +35,7 @@ object Palindrome {
                 lptr--
                 rptr++
             }
-            var length = rptr - lptr - 1
+            var length = rptr - lptr - 1 // rptr - lptr + 1  - 2 (reducing to the last good known pallindrome length)
             maxLength = max(maxLength, length)
             // Odd Length
             lptr = i
