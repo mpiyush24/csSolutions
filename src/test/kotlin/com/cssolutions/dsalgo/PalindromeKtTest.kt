@@ -1,7 +1,7 @@
-package com.cssolutions.algorithm
+package com.cssolutions.dsalgo
 
-import com.cssolutions.algorithm.Palindrome.isPalindrome
-import com.cssolutions.algorithm.Palindrome.lengthOfTheLongestPalindrome
+import com.cssolutions.dsalgo.Palindrome.isPalindrome
+import com.cssolutions.dsalgo.Palindrome.lengthOfTheLongestPalindrome
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test

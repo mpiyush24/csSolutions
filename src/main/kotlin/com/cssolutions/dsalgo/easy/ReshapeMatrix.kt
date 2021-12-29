@@ -1,4 +1,4 @@
-package com.cssolutions.algorithm.easy
+package com.cssolutions.dsalgo.easy
 
 fun reShapeMatrix(array: Array<IntArray>, row: Int, col: Int) : Array<IntArray>
 {

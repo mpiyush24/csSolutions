@@ -1,4 +1,4 @@
-package com.cssolutions.algorithm.medium
+package com.cssolutions.dsalgo.medium
 
 object CombinationSum {
 

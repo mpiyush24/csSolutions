@@ -1,4 +1,4 @@
-package com.cssolutions.algorithm
+package com.cssolutions.dsalgo
 
 fun matchRegularExpression(inputString: String, pattern: String): Boolean {
 

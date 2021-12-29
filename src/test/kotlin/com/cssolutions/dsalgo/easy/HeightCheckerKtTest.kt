@@ -1,4 +1,4 @@
-package com.cssolutions.algorithm.easy
+package com.cssolutions.dsalgo.easy
 
 import org.junit.jupiter.api.Test
 

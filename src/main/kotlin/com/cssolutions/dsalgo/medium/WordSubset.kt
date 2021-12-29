@@ -1,6 +1,4 @@
-package com.cssolutions.algorithm.medium
-
-import java.util.function.BiFunction
+package com.cssolutions.dsalgo.medium
 
 /*We are given two arrays A and B of words.  Each word is a string of lowercase letters.
 
