@@ -1,4 +1,4 @@
-package com.cssolutions.dsalgo
+package com.cssolutions.dsalgo.medium
 
 import kotlin.math.max
 

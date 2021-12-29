@@ -6,7 +6,7 @@ internal class ParenthesisTest {
 
     @Test
     fun testBaseCase() {
-        Parenthesis.printValidParenthesisCombinations(10)
+        Parenthesis.printValidParenthesisCombinations(4)
     }
 
 }
