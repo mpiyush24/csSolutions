@@ -6,10 +6,10 @@ class CloneGraph {
     fun cloneGraph(node: GraphNode?): GraphNode? {
         return if (node == null)
             null
-        else createClone(node, node.clone(), Array<GraphNode?>(100) { null })
+        else createClone(node, node.clone(), Array(100) { null })
     }
 
-    private fun createClone(node: GraphNode, clone: GraphNode, visitedArray: Array<GraphNode?>): GraphNode? {
+    private fun createClone(node: GraphNode, clone: GraphNode, visitedArray: Array<GraphNode?>): GraphNode {
         visitedArray[node.`val` - 1] = clone
         for (neighbor in node.neighbors) {
             if (visitedArray[neighbor!!.`val` - 1] == null) {
@@ -20,6 +20,5 @@ class CloneGraph {
         return clone
     }
 
-
-    fun GraphNode.clone() = GraphNode(this.`val`)
+    private fun GraphNode.clone() = GraphNode(this.`val`)
 }
