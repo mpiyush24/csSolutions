@@ -70,6 +70,7 @@ object TestUtils {
         adjList.add(intArrayOf(4,3))
         adjList.add(intArrayOf(4,6))
         adjList.add(intArrayOf(4,7))
+        adjList.add(intArrayOf(4,1))
         adjList.add(intArrayOf(5,4))
         adjList.add(intArrayOf(5,7))
         adjList.add(intArrayOf(7,6))
