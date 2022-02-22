@@ -26,7 +26,7 @@ class MaximumElementSubarray {
         println(rightMin.joinToString())
         println(leftMin.joinToString())
 
-        return result.fold(0) { x, y -> x + y }
+        return result.fold(0) { x, y -> x + (y % 10000000007).toInt() }
     }
 
     // Create the right min array, moving from first index to last Index
@@ -39,7 +39,7 @@ class MaximumElementSubarray {
                 // Create a Max stack (top element is always the Maximum),
                 // Whenever the element in the stack is greater than the incoming element, pop that from the stack
                 // the incoming element is the next smallest element for the popped element.
-                while (deque.isNotEmpty() && arr[deque.first()] > arr[ele_idx]) {
+                while (deque.isNotEmpty() && arr[deque.first()] >= arr[ele_idx]) {
                     deque.removeFirst().let {
                         //Store the total elements between the smallest element and the element at index ele_idx
                         rightMin[it] = ele_idx - it - 1 // -1 to exclude the minimum element itself.
