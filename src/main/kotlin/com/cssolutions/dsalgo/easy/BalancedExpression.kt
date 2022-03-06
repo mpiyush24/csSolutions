@@ -1,4 +1,4 @@
-package com.cssolutions.dsalgo.ds
+package com.cssolutions.dsalgo.easy
 
 import java.util.*
 

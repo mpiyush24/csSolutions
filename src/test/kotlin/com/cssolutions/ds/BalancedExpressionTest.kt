@@ -1,6 +1,6 @@
 package com.cssolutions.ds
 
-import com.cssolutions.dsalgo.ds.BalancedExpression
+import com.cssolutions.dsalgo.easy.BalancedExpression
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
