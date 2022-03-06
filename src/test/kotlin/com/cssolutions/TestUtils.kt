@@ -1,8 +1,8 @@
 package com.cssolutions
 
-import com.cssolutions.graph.GraphUtils
-import com.cssolutions.model.GraphNode
-import com.cssolutions.model.TreeNode
+import com.cssolutions.dsalgo.graph.GraphUtils
+import com.cssolutions.dsalgo.model.GraphNode
+import com.cssolutions.dsalgo.model.TreeNode
 
 object TestUtils {
     /**
@@ -17,17 +17,17 @@ object TestUtils {
      *        20     21 22    23
      */
     fun createTree() =
-        TreeNode(
+        _root_ide_package_.com.cssolutions.dsalgo.model.TreeNode(
             key = 1,
-            left = TreeNode(
+            left = _root_ide_package_.com.cssolutions.dsalgo.model.TreeNode(
                 key = 2,
-                left = TreeNode(4),
-                right = TreeNode(
+                left = _root_ide_package_.com.cssolutions.dsalgo.model.TreeNode(4),
+                right = _root_ide_package_.com.cssolutions.dsalgo.model.TreeNode(
                     key = 5,
-                    left = TreeNode(
+                    left = _root_ide_package_.com.cssolutions.dsalgo.model.TreeNode(
                         10,
-                        left = TreeNode(key = 20),
-                        right = TreeNode(21)
+                        left = _root_ide_package_.com.cssolutions.dsalgo.model.TreeNode(key = 20),
+                        right = _root_ide_package_.com.cssolutions.dsalgo.model.TreeNode(21)
                     ),
                     right = TreeNode
                         (

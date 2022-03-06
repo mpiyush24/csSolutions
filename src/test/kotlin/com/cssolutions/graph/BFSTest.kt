@@ -1,6 +1,7 @@
 package com.cssolutions.graph
 
 import com.cssolutions.TestUtils
+import com.cssolutions.dsalgo.graph.BFS
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*

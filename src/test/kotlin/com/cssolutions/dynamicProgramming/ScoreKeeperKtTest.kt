@@ -1,5 +1,6 @@
 package com.cssolutions.dynamicProgramming
 
+import com.cssolutions.dsalgo.dynamicProgramming.scoreKeeper
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*

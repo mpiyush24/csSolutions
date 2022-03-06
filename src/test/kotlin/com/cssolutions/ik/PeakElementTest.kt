@@ -1,6 +1,6 @@
 package com.cssolutions.ik
 
-import com.cssolutions.array.PeakElement
+import com.cssolutions.dsalgo.array.PeakElement
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*

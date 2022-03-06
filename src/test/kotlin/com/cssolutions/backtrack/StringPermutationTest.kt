@@ -1,5 +1,6 @@
 package com.cssolutions.backtrack
 
+import com.cssolutions.dsalgo.backtrack.StringPermutation
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 

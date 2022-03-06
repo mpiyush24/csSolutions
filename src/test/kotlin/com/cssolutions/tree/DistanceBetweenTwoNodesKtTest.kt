@@ -1,5 +1,6 @@
 package com.cssolutions.tree
 
+import com.cssolutions.dsalgo.tree.distanceBetweenNodes
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*

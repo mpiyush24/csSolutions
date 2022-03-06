@@ -1,5 +1,6 @@
 package com.cssolutions.array
 
+import com.cssolutions.dsalgo.array.RotateArray
 import com.cssolutions.utils.assertEqualList
 import org.junit.jupiter.api.Test
 

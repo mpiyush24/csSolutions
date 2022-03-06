@@ -1,5 +1,6 @@
 package com.cssolutions.array
 
+import com.cssolutions.dsalgo.array.MatrixSpiralForm
 import org.junit.jupiter.api.Test
 
 internal class MatrixSpiralFormTest {
