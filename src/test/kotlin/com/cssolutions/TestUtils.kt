@@ -17,17 +17,17 @@ object TestUtils {
      *        20     21 22    23
      */
     fun createTree() =
-        _root_ide_package_.com.cssolutions.dsalgo.model.TreeNode(
+        TreeNode(
             key = 1,
-            left = _root_ide_package_.com.cssolutions.dsalgo.model.TreeNode(
+            left = TreeNode(
                 key = 2,
-                left = _root_ide_package_.com.cssolutions.dsalgo.model.TreeNode(4),
-                right = _root_ide_package_.com.cssolutions.dsalgo.model.TreeNode(
+                left = TreeNode(4),
+                right = TreeNode(
                     key = 5,
-                    left = _root_ide_package_.com.cssolutions.dsalgo.model.TreeNode(
+                    left = TreeNode(
                         10,
-                        left = _root_ide_package_.com.cssolutions.dsalgo.model.TreeNode(key = 20),
-                        right = _root_ide_package_.com.cssolutions.dsalgo.model.TreeNode(21)
+                        left = TreeNode(key = 20),
+                        right = TreeNode(21)
                     ),
                     right = TreeNode
                         (

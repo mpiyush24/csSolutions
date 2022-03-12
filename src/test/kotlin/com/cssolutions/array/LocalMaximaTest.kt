@@ -1,6 +1,7 @@
 package com.cssolutions.array
 
-import com.cssolutions.main.IntResult
+import com.cssolutions.dsalgo.array.LocalMaxima
+import com.cssolutions.dsalgo.main.IntResult
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 

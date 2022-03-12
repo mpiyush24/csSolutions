@@ -1,5 +1,6 @@
 package com.cssolutions.backtrack
 
+import com.cssolutions.dsalgo.backtrack.NQueenProblem
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*

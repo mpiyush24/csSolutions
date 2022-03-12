@@ -1,6 +1,6 @@
 package com.cssolutions.dsalgo.dynamicProgramming
 
-import com.cssolutions.main.ReadInput
+import com.cssolutions.dsalgo.main.ReadInput
 import java.io.FileNotFoundException
 
 class RodCuttingMinimizeCost {

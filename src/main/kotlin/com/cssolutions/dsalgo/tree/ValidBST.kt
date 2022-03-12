@@ -1,7 +1,7 @@
 package com.cssolutions.dsalgo.tree
 
-import com.cssolutions.main.BTreePrinter.printNode
-import com.cssolutions.main.ReadInput.getTree
+import com.cssolutions.dsalgo.main.BTreePrinter.printNode
+import com.cssolutions.dsalgo.main.ReadInput.getTree
 import com.cssolutions.dsalgo.model.Tree
 
 class ValidBST {

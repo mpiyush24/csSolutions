@@ -1,13 +1,13 @@
-package com.cssolutions
+package com.cssolutions.dsalgo.tree
 
 import com.cssolutions.dsalgo.model.TreeNode
 
 class DPWorld2 {
-    fun distanceNode(root: _root_ide_package_.com.cssolutions.dsalgo.model.TreeNode, targetNode: _root_ide_package_.com.cssolutions.dsalgo.model.TreeNode, distance: Int): List<_root_ide_package_.com.cssolutions.dsalgo.model.TreeNode> {
+    fun distanceNode(root: TreeNode, targetNode: TreeNode, distance: Int): List<TreeNode> {
         val nodesOnPath = mutableListOf<DistanceNode>()
         pathToNode(root, targetNode, nodesOnPath, distance)
 
-        val nodesWithTargetDistance = mutableListOf<_root_ide_package_.com.cssolutions.dsalgo.model.TreeNode>()
+        val nodesWithTargetDistance = mutableListOf<TreeNode>()
         for (distanceNode in nodesOnPath) {
             val remainingDistance = distance - distanceNode.distance
             findNodesAtDistance(distanceNode.node, nodesWithTargetDistance, remainingDistance)
@@ -16,8 +16,8 @@ class DPWorld2 {
     }
 
     private fun findNodesAtDistance(
-        node: _root_ide_package_.com.cssolutions.dsalgo.model.TreeNode?,
-        nodesWithTargetDistance: MutableList<_root_ide_package_.com.cssolutions.dsalgo.model.TreeNode>,
+        node: TreeNode?,
+        nodesWithTargetDistance: MutableList<TreeNode>,
         remainingDistance: Int
     ) {
         if (node == null) return
@@ -31,8 +31,8 @@ class DPWorld2 {
     }
 
     private fun pathToNode(
-        root: _root_ide_package_.com.cssolutions.dsalgo.model.TreeNode?,
-        targetNode: _root_ide_package_.com.cssolutions.dsalgo.model.TreeNode,
+        root: TreeNode?,
+        targetNode: TreeNode,
         nodesOnPath: MutableList<DistanceNode>,
         distance: Int
     ): Int {
@@ -58,4 +58,4 @@ class DPWorld2 {
     }
 }
 
-data class DistanceNode(val node: _root_ide_package_.com.cssolutions.dsalgo.model.TreeNode, val distance: Int)
+data class DistanceNode(val node: TreeNode, val distance: Int)

@@ -1,12 +1,6 @@
 package com.cssolutions.dsalgo.main
 
-import com.cssolutions.dsalgo.dynamicProgramming.LCSeq
-import com.cssolutions.dynamicProgramming.LCSubString
-import com.cssolutions.dynamicProgramming.LongestIncreasingSubset
-import com.cssolutions.dsalgo.dynamicProgramming.LongestPalindromSubsequence
-import com.cssolutions.dsalgo.dynamicProgramming.MimimumCoinChange
-import com.cssolutions.dsalgo.dynamicProgramming.RodCuttingMinimizeCost
-import com.cssolutions.dynamicProgramming.SubsetSum
+import com.cssolutions.dsalgo.dynamicProgramming.*
 import com.cssolutions.dsalgo.tree.LevelOrderTraversal
 import com.cssolutions.dsalgo.tree.TopView
 import com.cssolutions.dsalgo.tree.ValidBST

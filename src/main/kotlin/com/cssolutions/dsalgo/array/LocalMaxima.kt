@@ -1,10 +1,10 @@
 package com.cssolutions.dsalgo.array
 
-import com.cssolutions.main.IntResult
+import com.cssolutions.dsalgo.main.IntResult
 
 class LocalMaxima {
 
-    fun doMaxima(arr: Array<Int>, beginIndex: Int, endIndex: Int, result:IntResult) {
+    fun doMaxima(arr: Array<Int>, beginIndex: Int, endIndex: Int, result: IntResult) {
         val e_index = (beginIndex + endIndex) / 2
         if (e_index > 0 && e_index < arr.size - 1) {
             if (arr[e_index] >= arr[e_index - 1] && arr[e_index] >= arr[e_index + 1]) {

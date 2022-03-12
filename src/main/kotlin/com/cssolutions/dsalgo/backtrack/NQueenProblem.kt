@@ -1,7 +1,5 @@
 package com.cssolutions.dsalgo.backtrack
 
-import com.cssolutions.main.ReadInput
-
 class NQueenProblem {
 
     fun placeQueens(board: Array<IntArray>, m: Int, n: Int): Boolean {

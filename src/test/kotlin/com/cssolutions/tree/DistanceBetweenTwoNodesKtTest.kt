@@ -1,9 +1,7 @@
 package com.cssolutions.tree
 
-import com.cssolutions.dsalgo.tree.distanceBetweenNodes
+import distanceBetweenNodes
 import org.junit.jupiter.api.Test
-
-import org.junit.jupiter.api.Assertions.*
 
 internal class DistanceBetweenTwoNodesKtTest {
 
