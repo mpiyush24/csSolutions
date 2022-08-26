@@ -1,5 +1,8 @@
 package com.cssolutions.dsalgo.graph
 
+/**
+ * Classic phone digit keypad to text
+ */
 class LetterCombination {
     private val digitAlphaMap = mapOf(
         '2' to listOf("a", "b", "c"),
