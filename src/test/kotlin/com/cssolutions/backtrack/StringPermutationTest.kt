@@ -15,4 +15,9 @@ internal class StringPermutationTest {
         assertTrue(expected.containsAll(result) && expected.size == result.size)
     }
 
+    @Test fun testPermutation1(){
+        val testEntity = StringPermutation()
+        val result = testEntity.permute1("ABC")
+        result.forEach { println(it) }
+    }
 }
