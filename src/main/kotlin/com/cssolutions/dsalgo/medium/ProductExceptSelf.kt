@@ -1,5 +1,8 @@
 package com.cssolutions.dsalgo.medium
 
+/**
+ * #maang
+ */
 class ProductExceptSelf {
     fun productExceptSelf(nums: IntArray): IntArray {
 

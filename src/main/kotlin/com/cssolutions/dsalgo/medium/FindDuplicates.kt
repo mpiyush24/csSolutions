@@ -1,5 +1,8 @@
 package com.cssolutions.dsalgo.medium
 
+/**
+ * #maang
+ */
 class FindDuplicates {
     fun findDuplicate(nums: IntArray): Int {
 
